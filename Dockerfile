@@ -2,7 +2,7 @@ FROM alpine:3.13.5
 
 MAINTAINER larry Zhang <190128084@qq.com>
 
-ENV K8s_VERSION 'v1.18.19'
+ENV K8s_VERSION 'v1.15.12'
 
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
 	&& apk -q update \
