@@ -1,6 +1,8 @@
 FROM alpine:3.13.5
 
-ENV K8s_VERSION 'v1.15.12'
+MAINTAINER larry Zhang <190128084@qq.com>
+
+ENV K8s_VERSION 'v1.16.14'
 
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
 	&& apk -q update \
